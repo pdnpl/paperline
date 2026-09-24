@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#e6dccb" />
+    <meta name="description" content="Paperline is a quiet 5×5 line puzzle. Ink the card until the picture appears." />
+    <title>Paperline</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="desk">
+      <main class="sheet">
+        <header class="mast">
+          <p class="brand">Paperline</p>
+          <ol class="dots" id="dots" aria-label="Cards in this set"></ol>
+        </header>
+        <article class="card" id="card">
+          <p class="caption" id="caption" aria-live="polite"></p>
+          <div class="board" id="board" aria-label="Puzzle card"></div>
+        </article>
+        <p class="hint" id="hint">Tap to ink. Tap again to mark empty. Once more clears the square.</p>
+        <footer class="actions">
+          <button type="button" id="undo" disabled>Undo</button>
+          <button type="button" id="clear">Clear</button>
+          <button type="button" id="again" hidden>Again</button>
+        </footer>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
