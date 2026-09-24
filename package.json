@@ -1,0 +1,23 @@
+{
+  "name": "paperline",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "verify": "node --experimental-strip-types scripts/verify.ts",
+    "test": "npm run verify"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "vite": "^7.1.5",
+    "wrangler": "^4.33.0"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "esbuild@0.28.1": true,
+    "workerd@1.20260921.1": true
+  }
+}
